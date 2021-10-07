@@ -9,13 +9,31 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.min.css" rel="stylesheet">
 
+    <!-- JS -->
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     <title>Binance Bot</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <h1>Trades</h1>
+      <div id="chart"></div>
+
+      <div id="trades"></div>
+      
+      <h1>Settings</h1>
+      <div id="settings">
+        <input type="checkbox" class=""> RSI
+        <input type="text" class="form-control" id="rsi_length" name="rsi_length" placeholder="14">
+        Overbought
+        <input type="text" class="form-control" id="rsi_overbought" name="rsi_overbought" placeholder="70">
+        Oversold
+        <input type="text" class="form-control" id="rsi_oversold" name="rsi_oversold" placeholder="30">
+      </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
